@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>범위 제한 전체 형/동생 요소 선택자</title>
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script>
+        $(function(){
+            var style_1={
+                "background-color":"#0ff",
+                "border":"2px solid #f00"
+            }
+
+            $(".txt3").prevUntil(".title").css(style_1);
+            $(".txt3").nextUntil(".txt6").css(style_1);
+
+        })
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <h1 class="title">선택자 1</h1>
+        <p>내용 1</p>
+        <p>내용 2</p>
+        <p class="txt3">내용 3</p>
+        <p>내용 4</p>
+        <p>내용 5</p>
+        <p class="txt6">내용 6</p>
+    </div>
+</body>
+</html>

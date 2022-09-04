@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>부모 요소 선택자</title>
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script>
+        $(function (){
+           $("#list_1").parent().css("border","2px dashed #f00");
+        });
+    </script>
+</head>
+<body>
+    <h1>인접 관게 선택자</h1>
+    <li>리스트1
+        <ul id ="wrap">
+            <li id="list_1">리스트 1-1</li>
+            <li>리스트 1-2</li>
+        </ul>
+    </li>
+    <li>리스트 2</li>
+    <li>리스트 3</li>
+</body>
+</html>
