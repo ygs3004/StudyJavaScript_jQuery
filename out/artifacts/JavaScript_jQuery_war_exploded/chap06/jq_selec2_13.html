@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>contains()/contents()/has()/not()/end() 탐색 선택자</title>
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script>
+        $(function(){
+
+            $("#inner_1 p:contains(내용 1)")
+                .css({"background-color":"#ff0"});
+
+            $("#inner_1 p:has(strong)")
+                .css({"background-color":"#0ff"});
+
+        })
+    </script>
+</head>
+<body>
+    <div id="outer_wrap">
+        <h1>콘텐츠 탐색자</h1>
+        <section id="inner_1">
+            <h1>containse().contents, has()</h1>
+            <p>
+                <span>내용 1</span>
+            </p>
+            <p>
+                <strong>내용 2</strong>
+            </p>
+            <p>
+                <span>내용 3</span>
+            </p>
+        </section>
+        <section id="inner_2">
+            <h1>not(), end()</h1>
+            <p>내용 4</p>
+            <p>내용 5</p>
+            <p>내용 6</p>
+        </section>
+    </div>
+</body>
+</html>
