@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script>
+        $(function(){
+            $("a").on("mouseover focus",function(){
+                $(this).css({"background-color":"#0ff"})
+            })
+
+            $(".gnb").on("mouseout blur", function(){
+                $("a").css({"background":"none"})
+            })
+
+        })
+    </script>
+</head>
+<body>
+    <ul class="gnb">
+        <button class="btn_1"><a href="#">menu1</a></button>
+        <button class="btn_1"><a href="#">menu1</a></button>
+        <button class="btn_1"><a href="#">menu1</a></button>
+        <button class="btn_1"><a href="#">menu1</a></button>
+    </ul>
+</body>
+</html>

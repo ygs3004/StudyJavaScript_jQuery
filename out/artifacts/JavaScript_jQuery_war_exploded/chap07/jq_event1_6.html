@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>mouseover() / mouseout() / hover()</title>
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script>
+        $(function(){
+            $(".btn1").on({
+                "mouseover":function(){
+                    $(".txt1").css({"background-color":"yellow"});
+                },
+                "mouseout":function(){
+                    $(".txt1").css({"background-color":"aqua"});
+                }
+            })
+
+            $(".btn2").hover(
+                function(){
+                    $(".txt2").css({"background-color":"aqua"});
+                },
+                function(){
+                    $(".txt2").css({"background-color":"transparent"});
+                }
+            );
+        });
+    </script>
+</head>
+<body>
+    <p>
+        <button class="btn1">Mouse Over / Mouse Out</button>
+    </p>
+    <p class="txt1">내용 1</p>
+    <p>
+        <button class="btn2">Hover</button>
+    </p>
+    <p class="txt2">내용 2</p>
+</body>
+</html>
