@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>addClass()/removeClass()/toggleClass()/hasClass()</title>
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script>
+        $(function(){
+           $("#p1").addClass("aqua");
+           $("#p2").removeClass("red");
+           $("#p3").toggleClass("green");
+           $("#p4").toggleClass("green");
+           $("#p6").text($("#p5").hasClass("yellow"))
+        });
+    </script>
+    <style>
+        .aqua{background-color:#0ff;}
+        .red{background-color:#f00;}
+        .green{background-color:#0f0;}
+        .yellow{background-color:#ff0;}
+    </style>
+</head>
+<body>
+    <p id="p1">내용 1</p>
+    <p id="p2" class="red">내용 2</p>
+    <p id="p3">내용 3</p>
+    <p id="p4" class="green">내용 4</p>
+    <p id="p5" class="yellow">내용 5</p>
+    <p id="p6"></p>
+</body>
+</html>

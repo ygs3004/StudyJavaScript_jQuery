@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>not() 메서드 이용하여 첫번째 <li>만 제외하고 노란색 배경</title>
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script>
+        $(function(){
+            $("#myList li").eq(2)
+                .css({"background-color":"yellow"});
+        });
+    </script>
+</head>
+<body>
+    <ul id="myList">
+        <li>내용1</li>
+        <li>내용2</li>
+        <li>내용3</li>
+        <li>내용4</li>
+    </ul>
+</body>
+</html>

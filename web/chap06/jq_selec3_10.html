@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>append() / appendTo() / prepend() / prependTo() 메서드</title>
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script>
+        $(function(){
+           $("<li>appendTo</li>").appendTo("#listZone");
+           $("#listZone").prepend("<li>prepend</li>")
+        });
+    </script>
+</head>
+<body>
+    <ul id="listZone">
+        <li>리스트</li>
+    </ul>
+</body>
+</html>

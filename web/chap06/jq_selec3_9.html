@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>before() / inserBefore() / after() / insertAfter() 메서드</title>
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script>
+        $(function(){
+           $("#wrap p:eq(2)").after("<p>After</p>")
+           $("<p>insertAfter</p>").insertAfter("#wrap p:eq(1)");
+
+           $("#wrap p:eq(1)").before("<p>Before</p>");
+           $("<p>insertBefore</p>").insertBefore("#wrap p:eq(0)");
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <p>내용 1</p>
+        <p>내용 2</p>
+        <p>내용 3</p>
+    </div>
+</body>
+</html>

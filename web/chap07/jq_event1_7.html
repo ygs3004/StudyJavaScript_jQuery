@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>mouseenter() / mouseleave() 이벤트 메서드</title>
+
+<!--    MouseOver/Out : 지정된 태그 요소(혹은 자신)는 물론이며, 자식 요소가 있다면 해당 "자식요소의 영역까지" 포함됨
+        MouseEnter/Leave : 지정된 태그 요소(혹은 자신)의 영역에만 해당되며, 만약 자식요소가 있다면 해당 "자식요소의 영역은 제외"됨
+        출처: https://rgy0409.tistory.com/3028 [친절한효자손 취미생활:티스토리]-->
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script>
+        $(function(){
+            $("#box_1").on("mouseout",function(){
+                $("#box_1").css({"background-color":"yellow"})
+            })
+
+            $("#box_2").on("mouseleave",function(){
+                $("#box_2").css({"background-color":"pink"})
+            })
+        });
+    </script>
+</head>
+<body>
+    <h1>mouseout</h1>
+    <div id="box_1">
+        <p><a href="#">내용 1</a></p>
+        <p><a href="#">내용 2</a></p>
+        <p><a href="#">내용 3</a></p>
+    </div>
+
+    <h1>mouseleave</h1>
+    <div id="box_2">
+        <p><a href="#">내용 4</a></p>
+        <p><a href="#">내용 5</a></p>
+        <p><a href="#">내용 6</a></p>
+    </div>
+</body>
+</html>
