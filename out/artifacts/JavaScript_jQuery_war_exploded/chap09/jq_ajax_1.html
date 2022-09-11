@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>load() 메서드</title>
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script>
+        $(function(){
+            $("#newsWrap_1")
+                .load("jq_ajax_letter.html #letter_1");
+            $("#newsWrap_2")
+                .load("jq_ajax_letter.html #letter_2");
+        })
+    </script>
+</head>
+<body>
+    <h1>LOAD 1</h1>
+    <div id="newsWrap_1"></div>
+    <h1>LOAD 2</h1>
+    <div id="newsWrap_2"></div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>queue() / dequeue() 메서드</title>
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script>
+        $(function(){
+            $(".txt1")
+                .animate({marginLeft:"200px"}, 1000)
+                .animate({marginTop:"200px"}, 1000)
+                .queue(function(){
+                    $(this).css({background:"red"});
+                    $(this).dequeue();
+                })
+                .animate({marginLeft:0},1000)
+                .animate({marginTop:0},1000)
+        })
+    </script>
+    <style>
+        *{margin:0;}
+        .txt1{
+            width:50px;
+            text-align:center;
+            background-color:aqua;
+        }
+    </style>
+</head>
+<body>
+    <p class="txt1">내용 1</p>
+</body>
+</html>

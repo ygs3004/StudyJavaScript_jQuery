@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>rss 연동(동일 출처 원칙에 따라 오류 발생 / 실패)</title>
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script>
+        $(function(){
+            $.ajax({
+                url:"http://myhome.chosun.com/rss/www_section_rss.xml",
+                dataType:"xml",
+                success:function(data){
+                    console.log(data)
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="wrap"></div>
+</body>
+</html>

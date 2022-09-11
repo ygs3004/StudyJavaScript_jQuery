@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script>
+        $(function(){
+            var href = "http://localhost:8080/JavaScript_jQuery/chap09/member.php?callback=myFnc";
+            $.ajax({
+                url:href,
+                dataType:"jsonp"
+            }).done(function myFnc(data){
+                console.log(data);
+            })
+        })
+    </script>
+</head>
+<body>
+
+</body>
+</html>
