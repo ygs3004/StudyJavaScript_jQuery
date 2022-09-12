@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="04a9da63-b026-41da-a9fd-c25ace81cce9" name="apache" url="http://localhost">
+      <webServer id="04a9da63-b026-41da-a9fd-c25ace81cce9" name="apache" url="">
         <fileTransfer mountedRoot="C:\Dev\REPOSITORY\JavaScript_jQuery\web" accessType="MOUNT" port="0" />
       </webServer>
     </option>
